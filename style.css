@@ -1,0 +1,228 @@
+:root {
+    background-color: #ecf5ff;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* color: #333333; */
+}
+
+/* h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: #56a5eb;;
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+} */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    /* max-width: 80rem; */
+    /* margin: 0 auto;
+    padding: 1rem; */
+}
+
+/* user value input */
+.app-title {
+    font-size: 300%;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 200%;
+    text-align: center;
+}
+
+input, button {
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+}
+
+input {
+    font-size: 160%;
+    padding: 1rem;
+    width: 30rem;
+    border: 1px solid #666666;
+    background-color: white;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    border: 0.1rem solid white;
+    width: 9rem;
+    height: 3rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+.loader {
+    border: 1rem solid white;
+    border-radius: 50%;
+    border-top: 1rem solid #666666;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+/* results section */
+.results {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+}
+
+/* hidden class on the initial screen (DO NOT TOUCH!)*/
+.hidden {
+    display: none;
+}
+
+/* crypto stats */
+.percent-change-positive {
+    color: green;
+}
+
+.percent-change-negative {
+    color: red;
+}
+
+.percent-change-neutral {
+    color: black;
+}
+
+/* crypto news & videos */
+ul {
+    list-style-type: none;
+}
+
+/* crypto news */
+
+
+/* crypto videos */
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .error-message {
+        font-size: 300%;
+    }
+    
+    .results {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+    }
+
+    .stats-results, .news-results, .videos-results {
+        background-color: white;
+        height: 65rem;
+        width: 50rem;
+        border: 0.1rem solid black;
+        overflow: auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    /* hidden class on the initial screen (DO NOT TOUCH!)*/
+    .hidden {
+        display: none;
+    }
+
+    /* crypto stats */
+
+
+    /* crypto news */
+    .news-results-list {
+        display: block;
+        width: 100%;
+    }
+
+    .each-news-item {
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .news-image {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .news-item-information {
+        display: block;
+    }
+
+    /* crypto videos */
+    .videos-results-list {
+        display: block;
+        width: 100%;
+    }
+
+    .each-video-item {
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .videos-image {
+        width: 12rem;
+        height: 10rem;
+    }
+
+    .videos-item-information {
+        display: block;
+    }
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Dashboard for Cryptocurrency Statistics, News, and related Videos">
+    <title>Crypto Stats, News, & Videos </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="app-title">Welcome to your Daily Crypto Dashboard</h1>
+
+        <form>
+            <label for="crypto-choice">Enter a Cryptocurrency</label>
+            <input type="text" id="crypto-choice" name="crypto-choice" placeholder="For Example: Bitcoin" required>
+            <button type="submit">SUBMIT!</button>
+        </form>
+
+        <div class="loader hidden"></div>
+
+        <div id="invalid-search" class="hidden">
+            <span id="js-error-message" class="error-message"></span>
+        </div>
+
+        <main class="results hidden">
+
+            <section class="stats-results">
+            </section>
+
+            <section class="news-results">
+                <h2>Latest Headlines</h2>
+                <ul class="news-results-list"></ul>
+            </section>
+
+            <section class="videos-results">
+                <h2>Relevant Videos</h2>
+                <ul class="videos-results-list"></ul>
+            </section>
+
+        </main>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
