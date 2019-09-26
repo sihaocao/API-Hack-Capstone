@@ -65,14 +65,14 @@ function getCryptoStats(userCryptoChoice) {
         const cryptoCirculatingSupply = Math.round(statsResponseJson.market_data.circulating_supply).toLocaleString('en');
         const cryptoSymbol = statsResponseJson.symbol.toUpperCase();
         const cryptoPercentChange = statsResponseJson.market_data.market_cap_change_percentage_24h.toFixed(2);
-        $('.stats-results').html(`
-            <img src="${statsResponseJson.image.small}" class="crypto-logo" alt="image of chosen cryptocurrency"></img>
-            <h2>${statsResponseJson.name}</h2>
-            <h3>Current Price: $${cryptoPrice}</h3>
-            <h4>Market Cap: $${cryptoMarketCap}</h4>
-            <h5>Circulating Supply: ${cryptoCirculatingSupply} ${cryptoSymbol}</h5>
-            <h5>Change (24h): <span class="percent-change">${cryptoPercentChange}%</span></h5>
-        `);
+        $('.stats-results').html(`<div class="all-crypto-stats">
+            <img src="${statsResponseJson.image.large}" class="crypto-logo" alt="image of chosen cryptocurrency"></img>
+            <h2 class="crypto-name">${statsResponseJson.name}</h2>
+            <h3 class="crypto-current-price">Current Price: $${cryptoPrice}</h3>
+            <h3 class="crypto-market-cap">Market Cap: $${cryptoMarketCap}</h4>
+            <h3 class="crypto-circulating-supply">Circulating Supply: ${cryptoCirculatingSupply} ${cryptoSymbol}</h5>
+            <h3 class="crypto-change">Change (24h): <span class="percent-change">${cryptoPercentChange}%</span></h5>
+        </div>`);
         percentChangeInMarketCap(statsResponseJson);
     }
 }

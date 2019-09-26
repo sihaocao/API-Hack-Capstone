@@ -43,7 +43,7 @@ h3 {
 /* user value input */
 .app-title {
     font-size: 300%;
-    margin-top: 10rem;
+    margin-top: 3rem;
     text-align: center;
 }
 
@@ -66,7 +66,7 @@ input, button {
 input {
     font-size: 160%;
     padding: 1rem;
-    width: 30rem;
+    width: 20rem;
     border: 1px solid #666666;
     background-color: white;
 }
@@ -85,13 +85,14 @@ button:hover {
     background-color: green;
 }
 
+/* loader */
 .loader {
     border: 1rem solid white;
     border-radius: 50%;
     border-top: 1rem solid #666666;
     width: 10rem;
     height: 10rem;
-    margin: auto;
+    margin: 5rem auto;
     animation: spin 2s linear infinite;
 }
   
@@ -104,6 +105,7 @@ button:hover {
     }
 }
 
+/* error message */
 .error-message {
     color: red;
     text-align: center;
@@ -116,12 +118,57 @@ button:hover {
     margin: 1rem auto;
 }
 
+.stats-results, .news-results, .videos-results {
+    background-color: white;
+    /* border: 0.1rem solid black; */
+    margin: 2rem auto;
+    padding: 1rem;
+    height: 30rem;
+    width: 26rem;
+    overflow: auto;
+}   
+
 /* hidden class on the initial screen (DO NOT TOUCH!)*/
 .hidden {
     display: none;
 }
 
 /* crypto stats */
+.all-crypto-stats {
+    text-align: center;
+}
+
+.crypto-logo {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.crypto-name {
+    font-size: 300%;
+    margin: 2rem auto;
+}
+
+.crypto-current-price {
+    font-size: 200%;
+    margin: 2rem auto;
+}
+
+.crypto-market-cap {
+    display: none;
+}
+
+.crypto-circulating-supply {
+    display: none;
+}
+
+.crypto-change {
+    font-size: 150%;
+}
+
 .percent-change-positive {
     color: green;
 }
@@ -140,17 +187,46 @@ ul {
 }
 
 /* crypto news */
+.news-image {
+    display: none;
+}
 
+.each-news-item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.news-article-source {
+    display: none;
+}
 
 /* crypto videos */
+.videos-image {
+    display: none;
+}
 
+.each-video-item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
+.each-video-channel {
+    display: none;
+}
 
 
 
 
 
 @media screen and (min-width: 768px) {
+    .app-title {
+        margin-top: 12rem;
+    }
+    
     .error-message {
         font-size: 300%;
     }
@@ -162,11 +238,11 @@ ul {
     }
 
     .stats-results, .news-results, .videos-results {
-        background-color: white;
+        /* background-color: white; */
         height: 65rem;
         width: 50rem;
-        border: 0.1rem solid black;
-        overflow: auto;
+        /* border: 0.1rem solid black; */
+        /* overflow: auto; */
         margin-left: 2rem;
         margin-right: 2rem;
     }
@@ -177,7 +253,34 @@ ul {
     }
 
     /* crypto stats */
+    .crypto-logo {
+        width: 15rem;
+        height: 15rem;
+    }
 
+    .crypto-name {
+        font-size: 500%;
+    }
+
+    .crypto-current-price {
+        font-size: 250%;
+    }
+
+    .crypto-market-cap {
+        display: block;
+        font-size: 200%;
+        margin: 2rem auto;
+    }
+
+    .crypto-circulating-supply {
+        display: block;
+        font-size: 200%;
+        margin: 2rem auto;
+    }
+
+    .crypto-change {
+        font-size: 200%;
+    }
 
     /* crypto news */
     .news-results-list {
@@ -187,18 +290,23 @@ ul {
 
     .each-news-item {
         display: flex;
-        margin-top: 1rem;
+        /* margin-top: 1rem;
         margin-bottom: 1rem;
         padding-left: 1rem;
-        padding-right: 1rem;
+        padding-right: 1rem; */
     }
 
     .news-image {
+        display: block;
         width: 10rem;
         height: 10rem;
     }
 
     .news-item-information {
+        display: block;
+    }
+
+    .news-article-source {
         display: block;
     }
 
@@ -210,18 +318,23 @@ ul {
 
     .each-video-item {
         display: flex;
-        margin-top: 1rem;
+        /* margin-top: 1rem;
         margin-bottom: 1rem;
         padding-left: 1rem;
-        padding-right: 1rem;
+        padding-right: 1rem; */
     }
 
     .videos-image {
+        display: block;
         width: 12rem;
         height: 10rem;
     }
 
     .videos-item-information {
+        display: block;
+    }
+
+    .each-video-channel {
         display: block;
     }
 }
