@@ -81,7 +81,7 @@ button:hover {
     margin: 5rem auto;
     animation: spin 2s linear infinite;
 }
-  
+
 @keyframes spin {
     0% {
       transform: rotate(0deg);
@@ -119,7 +119,15 @@ button:hover {
     width: 80%;
     overflow: auto;
     position: relative;
-}   
+}
+
+.stats-results, .news-results, .videos-results {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-y: scroll;
+    padding-top: 2.5%;
+}
 
 /* hidden class on the initial screen (DO NOT TOUCH!)*/
 .hidden {
@@ -183,11 +191,14 @@ ul {
 
 /* crypto news */
 .news-title {
-    text-align: center;
     font-size: 200%;
     font-weight: bold;
     position: absolute;
     overflow: hidden;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 5%;
+    text-align: center;
 }
 
 .news-results-list {
@@ -212,11 +223,15 @@ ul {
 
 /* crypto videos */
 .videos-title {
-    text-align: center;
     font-size: 200%;
     font-weight: bold;
     position: absolute;
     overflow: hidden;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 5%;
+    margin: auto;
+    text-align: center;
 }
 
 .videos-results-list {
@@ -247,26 +262,26 @@ ul {
     .app-title {
         margin-top: 12rem;
     }
-    
+
     .error-message {
         font-size: 300%;
     }
-    
+
     .results {
         display: flex;
         flex-direction: row;
         padding: 2rem;
     }
 
-    .stats-results, .news-results, .videos-results {
+    /* .stats-results, .news-results, .videos-results { */
         /* background-color: white; */
-        height: 65rem;
-        width: 50rem;
+        /* height: 100%;
+        width: 100%; */
         /* border: 0.1rem solid black; */
         /* overflow: auto; */
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
+        /* margin: 0;
+        overflow-y: scroll; */
+    /* } */
 
     /* hidden class on the initial screen (DO NOT TOUCH!)*/
     .hidden {
@@ -359,4 +374,3 @@ ul {
         display: block;
     }
 }
-
