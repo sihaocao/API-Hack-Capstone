@@ -114,7 +114,6 @@ button:hover {
 .stats-results-wrapper, .news-results-wrapper, .videos-results-wrapper {
     background-color: white;
     margin: 2rem auto;
-    padding: 1rem;
     height: 40rem;
     width: 80%;
     overflow: auto;
@@ -126,7 +125,6 @@ button:hover {
     width: 100%;
     margin: 0;
     overflow-y: scroll;
-    padding-top: 2.5%;
 }
 
 /* hidden class on the initial screen (DO NOT TOUCH!)*/
@@ -151,7 +149,7 @@ button:hover {
 .crypto-name {
     font-size: 300%;
     font-weight: bold;
-    margin: 10% auto;
+    margin: 5% auto;
 }
 
 .crypto-current-price {
@@ -196,13 +194,14 @@ ul {
     position: absolute;
     overflow: hidden;
     background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     width: 100%;
-    padding-bottom: 5%;
     text-align: center;
 }
 
 .news-results-list {
-    margin-top: 15%;
+    padding-top: 4rem;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -228,14 +227,14 @@ ul {
     position: absolute;
     overflow: hidden;
     background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     width: 100%;
-    padding-bottom: 5%;
-    margin: auto;
     text-align: center;
 }
 
 .videos-results-list {
-    margin-top: 15%;
+    padding-top: 4rem;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -273,15 +272,10 @@ ul {
         padding: 2rem;
     }
 
-    /* .stats-results, .news-results, .videos-results { */
-        /* background-color: white; */
-        /* height: 100%;
-        width: 100%; */
-        /* border: 0.1rem solid black; */
-        /* overflow: auto; */
-        /* margin: 0;
-        overflow-y: scroll; */
-    /* } */
+    .stats-results-wrapper, .news-results-wrapper, .videos-results-wrapper {
+        margin: 0 2rem;
+        height: 65rem;
+    }
 
     /* hidden class on the initial screen (DO NOT TOUCH!)*/
     .hidden {
