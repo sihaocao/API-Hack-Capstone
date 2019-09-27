@@ -111,13 +111,14 @@ button:hover {
     margin: 1rem auto;
 }
 
-.stats-results, .news-results, .videos-results {
+.stats-results-wrapper, .news-results-wrapper, .videos-results-wrapper {
     background-color: white;
     margin: 2rem auto;
     padding: 1rem;
     height: 40rem;
     width: 80%;
     overflow: auto;
+    position: relative;
 }   
 
 /* hidden class on the initial screen (DO NOT TOUCH!)*/
@@ -185,13 +186,12 @@ ul {
     text-align: center;
     font-size: 200%;
     font-weight: bold;
-    /* position: fixed; */
-    /* top: 0; */
-    /* overflow: hidden; */
+    position: absolute;
+    overflow: hidden;
 }
 
 .news-results-list {
-    /* margin-top: 2rem; */
+    margin-top: 15%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -215,13 +215,12 @@ ul {
     text-align: center;
     font-size: 200%;
     font-weight: bold;
-    /* position: fixed; */
-    /* top: 0; */
-    /* overflow: hidden; */
+    position: absolute;
+    overflow: hidden;
 }
 
 .videos-results-list {
-    /* margin-top: 2rem; */
+    margin-top: 15%;
     font-family: 'Roboto', sans-serif;
 }
 
