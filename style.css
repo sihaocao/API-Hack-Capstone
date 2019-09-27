@@ -8,42 +8,23 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    /* color: #333333; */
+    font-family: 'Open Sans', sans-serif;
 }
-
-/* h1, h2, h3, h4 {
-    margin-bottom: 1rem;
-}
-
-h1 {
-    font-size: 5.4rem;
-    color: #56a5eb;;
-    margin-bottom: 4rem;
-}
-
-h2 {
-    font-size: 2.7rem;
-    margin-bottom: 2rem;
-    font-weight: 700;
-}
-
-h3 {
-    font-size: 1.3rem;
-    font-weight: 500;
-} */
 
 .container {
     width: 100vw;
     height: 100vh;
-    /* max-width: 80rem; */
-    /* margin: 0 auto;
-    padding: 1rem; */
 }
 
 /* user value input */
 .app-title {
-    font-size: 300%;
-    margin-top: 3rem;
+    font-size: 320%;
+    font-weight: bold;
+    line-height: 120%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-align: center;
 }
 
@@ -55,34 +36,39 @@ form {
 label {
     font-size: 200%;
     text-align: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 input, button {
     border-radius: 0.5rem;
-    margin-bottom: 2rem;
-    margin: 0 auto;
+    margin: 2.5% auto;
 }
 
 input {
     font-size: 160%;
     padding: 1rem;
-    width: 20rem;
+    width: 55%;
     border: 1px solid #666666;
     background-color: white;
 }
 
 button {
-    background-color: orange;
-    color: white;
-    text-align: center;
     border: 0.1rem solid white;
-    width: 9rem;
-    height: 3rem;
+    background-color: #F8BC69;
+    color: #333333;
+    text-align: center;
+    width: 12rem;
+    height: 4rem;
+    font-size: 200%;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: green;
+    background-color: #55AB55;
+    color: #ffffff;
 }
 
 /* loader */
@@ -106,9 +92,16 @@ button:hover {
 }
 
 /* error message */
+#invalid-search {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin: 4rem auto;
+}
+
 .error-message {
     color: red;
-    text-align: center;
+    font-size: 200%;
+    line-height: 140%;
 }
 
 /* results section */
@@ -120,11 +113,10 @@ button:hover {
 
 .stats-results, .news-results, .videos-results {
     background-color: white;
-    /* border: 0.1rem solid black; */
     margin: 2rem auto;
     padding: 1rem;
-    height: 30rem;
-    width: 26rem;
+    height: 40rem;
+    width: 80%;
     overflow: auto;
 }   
 
@@ -139,22 +131,23 @@ button:hover {
 }
 
 .crypto-logo {
-    width: 10rem;
-    height: 10rem;
-    margin-top: 2rem;
+    width: 50%;
+    height: 50%;
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 5%;
 }
 
 .crypto-name {
     font-size: 300%;
-    margin: 2rem auto;
+    font-weight: bold;
+    margin: 10% auto;
 }
 
 .crypto-current-price {
     font-size: 200%;
-    margin: 2rem auto;
+    margin: 15% auto;
 }
 
 .crypto-market-cap {
@@ -166,7 +159,8 @@ button:hover {
 }
 
 .crypto-change {
-    font-size: 150%;
+    font-size: 175%;
+    margin: 15% auto;
 }
 
 .percent-change-positive {
@@ -187,6 +181,20 @@ ul {
 }
 
 /* crypto news */
+.news-title {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    /* position: fixed; */
+    /* top: 0; */
+    /* overflow: hidden; */
+}
+
+.news-results-list {
+    /* margin-top: 2rem; */
+    font-family: 'Roboto', sans-serif;
+}
+
 .news-image {
     display: none;
 }
@@ -203,6 +211,20 @@ ul {
 }
 
 /* crypto videos */
+.videos-title {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    /* position: fixed; */
+    /* top: 0; */
+    /* overflow: hidden; */
+}
+
+.videos-results-list {
+    /* margin-top: 2rem; */
+    font-family: 'Roboto', sans-serif;
+}
+
 .videos-image {
     display: none;
 }
