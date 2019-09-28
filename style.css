@@ -386,6 +386,40 @@ footer a {
         height: 65rem;
     }
     
+    /* crypto stats */
+    .crypto-logo {
+        width: 40%;
+        height: 40%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .crypto-name {
+        font-size: 250%;
+        margin-bottom: 15%;
+    }
+
+    .crypto-current-price {
+        font-size: 200%;
+        margin-bottom: 15%;
+    }
+
+    .crypto-market-cap {
+        display: block;
+        font-size: 200%;
+        margin-bottom: 15%;
+    }
+
+    .crypto-circulating-supply {
+        display: block;
+        font-size: 200%;
+        margin-bottom: 15%;
+    }
+
+    .crypto-change {
+        font-size: 200%;
+    }
+
     /* crypto news */
     .news-results-list {
         display: block;
@@ -394,10 +428,6 @@ footer a {
 
     .each-news-item {
         display: flex;
-        /* margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem; */
     }
 
     .news-image {
@@ -422,10 +452,6 @@ footer a {
 
     .each-video-item {
         display: flex;
-        /* margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem; */
     }
 
     .videos-image {
