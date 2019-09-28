@@ -1,5 +1,5 @@
 :root {
-    background-color: #ecf5ff;
+    background-color: #F3F4F9;
     font-size: 62.5%;
 }
 
@@ -25,6 +25,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
+    color: #2C303B;
 }
 
 form {
@@ -37,6 +38,7 @@ label {
     text-align: center;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
+    color: #152137;
 }
 
 input, button {
@@ -48,14 +50,13 @@ input {
     font-size: 160%;
     padding: 1rem;
     width: 55%;
-    border: 1px solid #666666;
-    background-color: white;
+    border: 1px solid #000036;
+    background-color: #ffffff;
 }
 
 button {
-    border: 0.1rem solid white;
-    background-color: #F8BC69;
-    color: #333333;
+    background-color: #4267B1;
+    color: #ffffff;
     text-align: center;
     width: 12rem;
     height: 4rem;
@@ -66,15 +67,15 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: #55AB55;
+    background-color: #597dc0;
     color: #ffffff;
 }
 
 /* loader */
 .loader {
-    border: 1rem solid white;
+    border: 1.5rem solid #F3F4F9;
     border-radius: 50%;
-    border-top: 1rem solid #666666;
+    border-top: 1.5rem solid #6b8bc7;
     width: 10rem;
     height: 10rem;
     margin: 5rem auto;
@@ -111,9 +112,10 @@ button:hover {
 }
 
 .stats-results-wrapper, .news-results-wrapper, .videos-results-wrapper {
-    background-color: white;
+    background-color: #ffffff;
     margin: 2rem auto;
     height: 40rem;
+    border-radius: 0.5rem;
     width: 80%;
     overflow: auto;
     position: relative;
@@ -136,24 +138,42 @@ button:hover {
     text-align: center;
 }
 
+.stats-title {
+    font-size: 200%;
+    font-weight: bold;
+    position: absolute;
+    overflow: hidden;
+    background-color: #3AA9F3;
+    color: #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.stats-results {
+    padding-top: 5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
 .crypto-logo {
     width: 50%;
     height: 50%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
 }
 
 .crypto-name {
-    font-size: 300%;
+    font-size: 350%;
     font-weight: bold;
-    margin: 5% auto;
+    margin: 2.5% auto;
 }
 
 .crypto-current-price {
     font-size: 200%;
-    margin: 15% auto;
+    margin: 12.5% auto;
 }
 
 .crypto-market-cap {
@@ -166,7 +186,7 @@ button:hover {
 
 .crypto-change {
     font-size: 175%;
-    margin: 15% auto;
+    margin: 12.5% auto;
 }
 
 .percent-change-positive {
@@ -181,7 +201,7 @@ button:hover {
     color: black;
 }
 
-/* crypto news & videos */
+/* crypto news & crypto videos */
 ul {
     list-style-type: none;
 }
@@ -192,15 +212,16 @@ ul {
     font-weight: bold;
     position: absolute;
     overflow: hidden;
-    background-color: white;
+    background-color: #3AA9F3;
+    color: #ffffff;
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 100%;
     text-align: center;
 }
 
-.news-results-list {
-    padding-top: 4rem;
+.news-results {
+    padding-top: 5rem;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -208,11 +229,16 @@ ul {
     display: none;
 }
 
-.each-news-item {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.news-results-list>.each-news-item:nth-child(odd) {
+    background-color: #ffffff;
+    color: #329ff2;
+    padding: 1rem;
+}
+
+.news-results-list>.each-news-item:nth-child(even) {
+    background-color: #97D2F9;
+    color: #2684D1;
+    padding: 1rem;
 }
 
 .news-article-source {
@@ -225,15 +251,16 @@ ul {
     font-weight: bold;
     position: absolute;
     overflow: hidden;
-    background-color: white;
+    background-color: #3AA9F3;
+    color: #ffffff;
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 100%;
     text-align: center;
 }
 
-.videos-results-list {
-    padding-top: 4rem;
+.videos-results {
+    padding-top: 5rem;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -241,30 +268,38 @@ ul {
     display: none;
 }
 
-.each-video-item {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.videos-results-list>.each-video-item:nth-child(odd) {
+    background-color: #ffffff;
+    color: #329ff2;
+    padding: 1rem;
+}
+
+.videos-results-list>.each-video-item:nth-child(even) {
+    background-color: #97D2F9;
+    color: #2684D1;
+    padding: 1rem;
 }
 
 .each-video-channel {
     display: none;
 }
 
+/* footer */
+footer {
+    text-align: center;
+    font-size: 160%;
+    color: #000036;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
+footer a {
+    text-decoration: none;
+}
 
 
 
 @media screen and (min-width: 768px) {
-    .app-title {
-        margin-top: 12rem;
-    }
-
-    .error-message {
-        font-size: 300%;
-    }
-
     .results {
         display: flex;
         flex-direction: row;
@@ -273,44 +308,84 @@ ul {
 
     .stats-results-wrapper, .news-results-wrapper, .videos-results-wrapper {
         margin: 0 2rem;
-        height: 65rem;
+        height: 55rem;
     }
-
+    
     /* hidden class on the initial screen (DO NOT TOUCH!)*/
     .hidden {
         display: none;
     }
 
+    .app-title {
+        margin-top: 12rem;
+        margin-bottom: 2%;
+        font-size: 380%;
+    }
+
+    label {
+        font-size: 240%;
+    }
+
+    input {
+        width: 30%;
+        margin: 1% auto;
+    }
+
+    button {
+        width: 14rem;
+    }
+
+    .error-message {
+        font-size: 300%;
+    }
+
     /* crypto stats */
     .crypto-logo {
-        width: 15rem;
-        height: 15rem;
+        width: 45%;
+        height: 45%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .crypto-name {
-        font-size: 500%;
+        font-size: 250%;
+        margin-bottom: 15%;
     }
 
     .crypto-current-price {
-        font-size: 250%;
+        font-size: 200%;
+        margin-bottom: 15%;
     }
 
     .crypto-market-cap {
         display: block;
         font-size: 200%;
-        margin: 2rem auto;
+        margin-bottom: 15%;
     }
 
     .crypto-circulating-supply {
         display: block;
         font-size: 200%;
-        margin: 2rem auto;
+        margin-bottom: 15%;
     }
 
     .crypto-change {
         font-size: 200%;
     }
+}
 
+
+
+@media screen and (min-width: 1024px) {
+    /* hidden class on the initial screen (DO NOT TOUCH!)*/
+    .hidden {
+        display: none;
+    }
+
+    .stats-results-wrapper, .news-results-wrapper, .videos-results-wrapper {
+        height: 65rem;
+    }
+    
     /* crypto news */
     .news-results-list {
         display: block;
