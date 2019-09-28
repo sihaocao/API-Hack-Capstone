@@ -1,5 +1,5 @@
 :root {
-    background-color: #F3F4F9;
+    background-color: #ecf5ff;
     font-size: 62.5%;
 }
 
@@ -15,13 +15,17 @@
     height: 100vh;
 }
 
+.site-logo {
+    display: block;
+    margin: 0 auto;
+}
+
 /* user value input */
 .app-title {
     font-size: 320%;
     font-weight: bold;
     line-height: 120%;
-    margin-top: 20%;
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
@@ -49,7 +53,7 @@ input, button {
 input {
     font-size: 160%;
     padding: 1rem;
-    width: 55%;
+    width: 17.5rem;
     border: 1px solid #000036;
     background-color: #ffffff;
 }
@@ -73,12 +77,12 @@ button:hover {
 
 /* loader */
 .loader {
-    border: 1.5rem solid #F3F4F9;
+    border: 1.5rem solid #a2b5dd;
+    border-top: 1.5rem solid #456cba;
     border-radius: 50%;
-    border-top: 1.5rem solid #6b8bc7;
     width: 10rem;
     height: 10rem;
-    margin: 5rem auto;
+    margin: 2rem auto;
     animation: spin 2s linear infinite;
 }
 
@@ -95,13 +99,13 @@ button:hover {
 #invalid-search {
     padding-left: 4rem;
     padding-right: 4rem;
-    margin: 4rem auto;
+    margin: 1rem auto;
 }
 
 .error-message {
     color: red;
-    font-size: 200%;
-    line-height: 140%;
+    font-size: 180%;
+    line-height: 130%;
 }
 
 /* results section */
@@ -317,26 +321,29 @@ footer a {
     }
 
     .app-title {
-        margin-top: 12rem;
-        margin-bottom: 2%;
-        font-size: 380%;
+        font-size: 400%;
     }
 
     label {
-        font-size: 240%;
+        font-size: 300%;
     }
 
     input {
-        width: 30%;
-        margin: 1% auto;
+        width: 20rem;
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.5%;
     }
 
-    button {
-        width: 14rem;
+    .loader {
+        margin: 4rem auto;
     }
 
+    /* error message */
     .error-message {
-        font-size: 300%;
+        font-size: 260%;
+        padding: 1rem;
     }
 
     /* crypto stats */
@@ -386,6 +393,10 @@ footer a {
         height: 65rem;
     }
     
+    .loader {
+        margin: 4rem auto;
+    }
+
     /* crypto stats */
     .crypto-logo {
         width: 40%;

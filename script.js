@@ -43,7 +43,7 @@ function getCryptoStats(userCryptoChoice) {
                 })
                 .then((statsResponseJson) => displayCryptoStats(statsResponseJson))
                 .catch(error => {
-                    $('#js-error-message').html('<p>Hmm...Did you enter a valid cryptocurrency name? Here is a full <a href="https://www.coingecko.com/en" target="_blank">list</a> of cryptocurrencies. Please enter a valid cryptocurrency name and try again.</p>');
+                    $('#js-error-message').html('<p>Did you enter a valid cryptocurrency name? Here is a full <a href="https://www.coingecko.com/en" target="_blank">list</a> of cryptocurrencies. Please enter a valid name and try again.</p>');
                 });
         })
 
