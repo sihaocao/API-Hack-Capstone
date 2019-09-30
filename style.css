@@ -301,6 +301,10 @@ footer a {
     text-decoration: none;
 }
 
+footer a:hover {
+    color: #0000cc;
+}
+
 
 
 @media screen and (min-width: 768px) {
@@ -326,18 +330,15 @@ footer a {
 
     label {
         font-size: 300%;
+        margin-top: 3.5%;
     }
 
     input {
         width: 20rem;
-        margin-top: 1%;
+        margin-top: 0%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 0.5%;
-    }
-
-    .loader {
-        margin: 4rem auto;
     }
 
     /* error message */
@@ -360,7 +361,7 @@ footer a {
     }
 
     .crypto-current-price {
-        font-size: 200%;
+        font-size: 250%;
         margin-bottom: 15%;
     }
 
@@ -379,11 +380,35 @@ footer a {
     .crypto-change {
         font-size: 200%;
     }
+
+    /* footer */
+    footer {
+        font-size: 200%;
+    }
 }
 
 
 
 @media screen and (min-width: 1024px) {
+    label {
+        margin-bottom: 0%;
+    }
+
+    input, button {
+        margin: 1% auto;
+    }
+
+    input {
+        font-size: 200%;
+        width: 22.5rem;
+    }
+    
+    button {
+        width: 13.5rem;
+        height: 4.5rem;
+        font-size: 240%;
+    }
+
     /* hidden class on the initial screen (DO NOT TOUCH!)*/
     .hidden {
         display: none;
@@ -391,10 +416,6 @@ footer a {
 
     .stats-results-wrapper, .news-results-wrapper, .videos-results-wrapper {
         height: 65rem;
-    }
-    
-    .loader {
-        margin: 4rem auto;
     }
 
     /* crypto stats */
@@ -449,10 +470,19 @@ footer a {
 
     .news-item-information {
         display: block;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .news-article-title {
+        font-size: 160%;
+        padding-bottom: 1rem;
     }
 
     .news-article-source {
         display: block;
+        font-size: 160%;
+        color: #717D93;
     }
 
     /* crypto videos */
@@ -473,9 +503,18 @@ footer a {
 
     .videos-item-information {
         display: block;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .each-video-title {
+        font-size: 160%;
+        padding-bottom: 1rem;
     }
 
     .each-video-channel {
         display: block;
+        font-size: 160%;
+        color: #717D93;
     }
 }
