@@ -161,8 +161,8 @@ button:hover {
 }
 
 .crypto-logo {
-    width: 50%;
-    height: 50%;
+    width: 12rem;
+    height: 12rem;
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
@@ -349,8 +349,6 @@ footer a:hover {
 
     /* crypto stats */
     .crypto-logo {
-        width: 45%;
-        height: 45%;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -415,41 +413,39 @@ footer a:hover {
     }
 
     .stats-results-wrapper, .news-results-wrapper, .videos-results-wrapper {
-        height: 65rem;
+        height: 62.5rem;
     }
 
     /* crypto stats */
     .crypto-logo {
-        width: 40%;
-        height: 40%;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
     .crypto-name {
-        font-size: 250%;
+        font-size: 350%;
         margin-bottom: 15%;
     }
 
     .crypto-current-price {
-        font-size: 200%;
+        font-size: 300%;
         margin-bottom: 15%;
     }
 
     .crypto-market-cap {
         display: block;
-        font-size: 200%;
+        font-size: 250%;
         margin-bottom: 15%;
     }
 
     .crypto-circulating-supply {
         display: block;
-        font-size: 200%;
+        font-size: 250%;
         margin-bottom: 15%;
     }
 
     .crypto-change {
-        font-size: 200%;
+        font-size: 250%;
     }
 
     /* crypto news */
@@ -475,13 +471,13 @@ footer a:hover {
     }
 
     .news-article-title {
-        font-size: 160%;
+        font-size: 120%;
         padding-bottom: 1rem;
     }
 
     .news-article-source {
         display: block;
-        font-size: 160%;
+        font-size: 120%;
         color: #717D93;
     }
 
@@ -508,13 +504,36 @@ footer a:hover {
     }
 
     .each-video-title {
-        font-size: 160%;
+        font-size: 120%;
         padding-bottom: 1rem;
     }
 
     .each-video-channel {
         display: block;
-        font-size: 160%;
+        font-size: 120%;
         color: #717D93;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    /* hidden class on the initial screen (DO NOT TOUCH!)*/
+    .hidden {
+        display: none;
+    }
+
+    .news-article-title {
+        font-size: 160%;
+    }
+
+    .news-article-source {
+        font-size: 160%;
+    }
+
+    .each-video-title {
+        font-size: 160%;
+    }
+
+    .each-video-channel {
+        font-size: 160%;
     }
 }
