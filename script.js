@@ -18,6 +18,7 @@ function getCryptoStats(userCryptoChoice) {
 
     const queryString = formatQueryParams(params);
 
+    // First fetching cryptoListUrl by passing in the user search term. Once the search returns the id with the matching name that was passed in, the id is inserted into the second API.
     fetch(cryptoListUrl)
         .then(cryptoListResponse => cryptoListResponse.json())
         .then(cryptoListResponseJson => {
@@ -47,6 +48,7 @@ function getCryptoStats(userCryptoChoice) {
                 });
         })
 
+    // formatting the 24-hour percent change statistic
     function percentChangeInMarketCap(statsResponseJson) {
         if (statsResponseJson.market_data.market_cap_change_percentage_24h > 0) {
             return $('.percent-change').addClass('percent-change-positive').removeClass('percent-change-negative').removeClass('percent-change-neutral');
@@ -96,6 +98,7 @@ function getCryptoNews(userCryptoChoice) {
     const queryString = formatQueryParams(params);
     const newsUrl = newsSearchUrl + '?' + queryString;
 
+    // fetching the latest news headlines
     fetch(newsUrl)
         .then(newsResponse => {
             if (newsResponse.ok) {
@@ -146,6 +149,7 @@ function getCryptoVideos(userCryptoChoice) {
     const queryString = formatQueryParams(params);
     const videosUrl = videoSearchUrl + '?' + queryString;
 
+    // fetching the relevant videos
     fetch(videosUrl)
         .then(videosResponse => {
             if (videosResponse.ok) {
@@ -175,6 +179,7 @@ function getCryptoVideos(userCryptoChoice) {
 
 
 
+// Capitalizing the first letter of the search term so users who enter the proper name with all lower-case letters will still receive an output
 function watchForm() {
     $('form').on('submit', function(event) {
         event.preventDefault();
