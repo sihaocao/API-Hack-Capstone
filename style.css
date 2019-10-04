@@ -25,10 +25,17 @@
     font-size: 320%;
     font-weight: bold;
     line-height: 120%;
-    margin-bottom: 2.5%;
+    margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
+    color: #2C303B;
+}
+
+.tag-line {
+    font-size: 160%;
+    text-align: center;
+    padding: 2rem;
     color: #2C303B;
 }
 
@@ -328,6 +335,10 @@ footer a:hover {
         font-size: 400%;
     }
 
+    .tag-line {
+        font-size: 200%;
+    }
+
     label {
         font-size: 300%;
         margin-top: 3.5%;
@@ -388,6 +399,10 @@ footer a:hover {
 
 
 @media screen and (min-width: 1024px) {
+    .tag-line {
+        font-size: 240%;
+    }
+    
     label {
         margin-bottom: 0%;
     }
@@ -519,6 +534,10 @@ footer a:hover {
     /* hidden class on the initial screen (DO NOT TOUCH!)*/
     .hidden {
         display: none;
+    }
+
+    .tag-line {
+        font-size: 300%;
     }
 
     .news-article-title {
