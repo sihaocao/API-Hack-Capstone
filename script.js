@@ -60,7 +60,6 @@ function getCryptoStats(userCryptoChoice) {
     }
 
     function displayCryptoStats(statsResponseJson) {
-        // console.log(statsResponseJson);
         $('.stats-results').empty();
         const cryptoPrice = statsResponseJson.market_data.current_price.usd.toLocaleString('en');
         const cryptoMarketCap = statsResponseJson.market_data.market_cap.usd.toLocaleString('en');
@@ -112,7 +111,6 @@ function getCryptoNews(userCryptoChoice) {
         });
     
     function displayCryptoNews(newsResponseJson) {
-        // console.log(newsResponseJson);
         $('.news-results-list').empty();
         for (let i = 0; i < newsResponseJson.Data.length; i++) {
             const newsArticle = newsResponseJson.Data[i].url;
@@ -163,7 +161,6 @@ function getCryptoVideos(userCryptoChoice) {
         });
 
     function displayCryptoVideos(videosResponseJson) {
-        // console.log(videosResponseJson);
         $('.videos-results-list').empty();
         for (let i = 0; i < videosResponseJson.items.length; i++) {
             $('.videos-results-list').append(`<li class="each-video-item">
